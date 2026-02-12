@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 龍馬精神 ‧ 高雄燈會三天兩夜之旅</title>
+    <style>
+        :root {
+            --cny-red: #E63946;
+            --gold: #edc618;
+            --ultraman-blue: #1D3557;
+            --warm-bg: #FFF9F2;
+            --text-dark: #2B2D42;
+            --success-green: #2A9D8F;
+        }
+        
+        body {
+            font-family: "Microsoft JhengHei", "PingFang TC", sans-serif;
+            background-color: var(--warm-bg);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            border: 5px solid var(--gold);
+        }
+
+        header {
+            background: var(--cny-red);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            background-image: linear-gradient(45deg, rgba(255,255,255,0.05) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.05) 75%, transparent 75%, transparent);
+            background-size: 50px 50px;
+        }
+
+        header h1 { margin: 0; font-size: 2.2em; letter-spacing: 3px; }
+        header p { margin: 10px 0 0; font-size: 1.1em; font-weight: bold; color: var(--gold); }
+
+        .hotel-tag {
+            background: #FFF3E0;
+            color: var(--cny-red);
+            padding: 18px;
+            margin: 20px;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid var(--gold);
+            line-height: 1.6;
+        }
+
+        .day-section { padding: 0 25px 25px; }
+        
+        .day-header {
+            display: flex;
+            align-items: center;
+            margin: 35px 0 15px;
+        }
+
+        .day-number {
+            background: var(--cny-red);
+            color: white;
+            width: 90px;
+            height: 38px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-right: 15px;
+            box-shadow: 3px 3px 0 var(--gold);
+        }
+
+        .day-title {
+            font-size: 1.25em;
+            color: var(--cny-red);
+            font-weight: bold;
+            border-bottom: 3px solid var(--gold);
+            flex-grow: 1;
+            padding-bottom: 5px;
+        }
+
+        .timeline { list-style: none; padding: 0; margin: 0; }
+        .timeline li {
+            display: flex;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #F0F0F0;
+        }
+        .time {
+            min-width: 75px;
+            font-weight: 900;
+            color: var(--ultraman-blue);
+            font-size: 1.1em;
+        }
+        .activity { flex-grow: 1; }
+        .activity strong { display: block; color: #000; font-size: 1.1em; margin-bottom: 5px; }
+        .activity span { font-size: 0.95em; color: #555; line-height: 1.5; }
+
+        .important-box {
+            background: #EBF5F4;
+            border-left: 5px solid var(--success-green);
+            padding: 12px;
+            border-radius: 5px;
+            color: #1B4332;
+            font-size: 0.95em;
+            margin-top: 10px;
+        }
+
+        .badge-red { background: var(--cny-red); color: white; padding: 2px 10px; border-radius: 50px; font-size: 0.8em; margin-bottom: 5px; display: inline-block; }
+        .badge-blue { background: var(--ultraman-blue); color: white; padding: 2px 10px; border-radius: 50px; font-size: 0.8em; margin-bottom: 5px; display: inline-block; }
+
+        .footer {
+            background: #FDF2F2;
+            padding: 25px;
+            text-align: center;
+            border-top: 1px solid var(--gold);
+        }
+        .footer-blessing { color: var(--cny-red); font-size: 1.2em; font-weight: bold; margin-bottom: 5px; }
+        .footer-sub { color: #888; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>🐎 2026 馬到成功 ‧ 賀新春</h1>
+        <p>台南 → 高雄 ‧ 全家 5 人超人力霸王燈會之旅</p>
+    </header>
+
+    <div class="hotel-tag">
+        🏮 <strong>下榻飯店：高雄陽光大飯店</strong> 🏮<br>
+        <small>三多商圈核心位置 ‧ 復古中式風情</small>
+    </div>
+
+    <div class="day-section">
+        <div class="day-header">
+            <div class="day-number">第一天</div>
+            <div class="day-title">02/20 (初三) ‧ 英雄現身港灣</div>
+        </div>
+        <ul class="timeline">
+            <li>
+                <div class="time">09:30</div>
+                <div class="activity">
+                    <strong>台南出發 ‧ 春節遠足</strong>
+                    <span>由海安路出發前往台南火車站，搭乘火車前往高雄。</span>
+                </div>
+            </li>
+            <li>
+                <div class="time">11:00</div>
+                <div class="activity">
+                    <strong>行李寄存 ‧ 輕裝上陣</strong>
+                    <span>抵達陽光大飯店寄放 5 人行李。<strong>此時還不能入房。</strong></span>
+                </div>
+            </li>
+            <li>
+                <div class="time">12:30</div>
+                <div class="activity">
+                    <strong>三多商圈美食探險</strong>
+                    <span>鄰近百貨美食或興中夜市，享用熱騰騰的午餐。</span>
+                </div>
+            </li>
+            <li>
+                <div class="time">15:00</div>
+                <div class="activity">
+                    <div class="badge-red">進房 Check-in</div>
+                    <strong>入住陽光大飯店 ‧ 舒壓午睡</strong>
+                    <span>全家入房安置行李，休息至下午四點，為晚上的燈會行程儲備電力。</span>
+                </div>
+            </li>
+            <li>
+                <div class="time">16:00</div>
+                <div class="activity">
+                    <strong>苓雅市場 ‧ 自強夜市巡禮</strong>
+                    <span>步行約 5-8 分鐘即可抵達。推薦：<strong>南豐魯肉飯、苓雅油飯、熱炒店</strong></span>
+                    <div class="important-box">
+                        <strong>💡 早點吃最明智：</strong>16:00 開始吃晚餐能完美避開 18:00 的擁擠人潮，用餐更悠哉。
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="time">18:00</div>
+                <div class="activity">
+                    <div class="badge-blue">核心亮點</div>
+                    <strong>超人力霸王燈會 (愛河灣)</strong>
+                    <span>由市場散步 15 分鐘至愛河灣。看 15 公尺高巨型裝置與光影秀！</span>
+                </div>
+            </li>
+        </ul>
+
+        <div class="day-header">
+            <div class="day-number">第二天</div>
+            <div class="day-title">02/21 (初四) ‧ 藝文與購物的盛宴</div>
+        </div>
+        <ul class="timeline">
+            <li>
+                <div class="time">10:00</div>
+                <div class="activity">
+                    <strong>早起鳥兒有餐吃</strong>
+                    <span>享受飯店內或周邊經典高雄早餐，緩步開啟一天。</span>
+                </div>
+            </li>
+            <li>
+                <div class="time">11:30</div>
+                <div class="activity">
+                    <strong>衛武營國家藝術中心</strong>
+                    <span>搭捷運直達鳳山，在寬廣草地散步拍照，享受文藝氣息。</span>
+                </div>
+            </li>
+            <li>
+                <div class="time">15:00</div>
+                <div class="activity">
+                    <strong>SKM Park Outlets</strong>
+                    <span>全家選購新春禮物，體驗叮叮車與美式 Outlets 氛圍。</span>
+                </div>
+            </li>
+            <li>
+                <div class="time">18:30</div>
+                <div class="activity">
+                    <strong>瑞豐夜市 ‧ 大啖美食</strong>
+                    <span>5 個人分工合作，一次掃蕩炸鮮奶、章魚燒與在地烤肉！</span>
+                </div>
+            </li>
+        </ul>
+
+        <div class="day-header">
+            <div class="day-number">第三天</div>
+            <div class="day-title">02/22 (初五) ‧ 旗津海味送暖</div>
+        </div>
+        <ul class="timeline">
+            <li>
+                <div class="time">11:00</div>
+                <div class="activity">
+                    <div class="badge-red">退房 Check-out</div>
+                    <strong>退房並寄存行李</strong>
+                    <div class="important-box">
+                        <strong>💡 貼心筆記：</strong>雖然要辦理退房，但行李請留給飯店櫃台託管！這樣去旗津才不用拖著箱子，兩手空空最輕鬆。
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="time">12:30</div>
+                <div class="activity">
+                    <strong>旗津海鮮團圓飯</strong>
+                    <span>搭渡輪過海，在旗津老街點一桌現撈海味，慶祝春節。</span>
+                </div>
+            </li>
+            <li>
+                <div class="time">15:00</div>
+                <div class="activity">
+                    <strong>高雄燈塔 ‧ 絕美夕照</strong>
+                    <span>登高望遠，看高雄港最後一抹晚霞。</span>
+                </div>
+            </li>
+            <li>
+                <div class="time">18:00</div>
+                <div class="activity">
+                    <strong>領行李 ‧ 賦歸台南</strong>
+                    <span>回飯店取回行李，搭車返回台南，迎接新的一年。</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <div class="footer-blessing">🐎 祝您全家：馬到成功，龍馬精神！ 🐎</div>
+        <div class="footer-sub">2026 高雄新春之旅 ‧ 完美結案</div>
+    </div>
+</div>
+
+</body>
+</html>
