@@ -128,6 +128,59 @@
         }
         .footer-blessing { color: var(--cny-red); font-size: 1.2em; font-weight: bold; margin-bottom: 5px; }
         .footer-sub { color: #888; font-size: 0.9em; }
+
+        .train-table-wrapper {
+            margin: 20px 0;
+            padding: 15px;
+            background: #FFF9F2;
+            border-radius: 10px;
+            border: 2px solid var(--gold);
+        }
+        .train-table-title {
+            font-size: 1.05em;
+            font-weight: bold;
+            color: var(--ultraman-blue);
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        .train-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .train-table thead {
+            background: var(--cny-red);
+            color: white;
+        }
+        .train-table th {
+            padding: 12px 8px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .train-table td {
+            padding: 10px 8px;
+            text-align: center;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.9em;
+        }
+        .train-table tbody tr:hover {
+            background: #FFF9F2;
+        }
+        .train-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        .train-type {
+            font-weight: bold;
+            color: var(--ultraman-blue);
+        }
+        .train-time {
+            color: var(--cny-red);
+            font-weight: 900;
+        }
     </style>
 </head>
 <body>
@@ -146,14 +199,52 @@
     <div class="day-section">
         <div class="day-header">
             <div class="day-number">第一天</div>
-            <div class="day-title">02/20 (初三) ‧ 英雄現身港灣</div>
+            <div class="day-title">02/18 (初二) ‧ 英雄現身港灣</div>
         </div>
+        
+        <div class="train-table-wrapper">
+            <div class="train-table-title">🚄 台南 → 高雄 火車班次參考</div>
+            <table class="train-table">
+                <thead>
+                    <tr>
+                        <th>車種</th>
+                        <th>車次</th>
+                        <th>路線</th>
+                        <th>發車</th>
+                        <th>抵達</th>
+                        <th>時長</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="train-type">區間快</td>
+                        <td>3005</td>
+                        <td>臺中 → 臺東</td>
+                        <td class="train-time">08:25</td>
+                        <td class="train-time">09:03</td>
+                        <td>38 分</td>
+                    </tr>
+                    <tr>
+                        <td class="train-type">自強(3000)</td>
+                        <td>5121</td>
+                        <td>臺中 → 潮州</td>
+                        <td class="train-time">09:22</td>
+                        <td class="train-time">09:59</td>
+                        <td>36 分</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
         <ul class="timeline">
             <li>
-                <div class="time">09:30</div>
+                <div class="time">07:50</div>
                 <div class="activity">
                     <strong>台南出發 ‧ 春節遠足</strong>
-                    <span>由海安路出發前往台南火車站，搭乘火車前往高雄。</span>
+                    <span>由海安路坐計程車🚕出發前往台南火車站，搭乘火車前往高雄火車站。</span>
+                    <div class="important-box">
+                        <strong>💡 人潮多，可能沒座位，忍耐一下</strong>預計搭上 08:25 的區間快，人多的話可能會沒座位。自強 5121車次是備案，這班乘車當日限量發售無座票。
+                    </div>
                 </div>
             </li>
             <li>
@@ -200,7 +291,7 @@
 
         <div class="day-header">
             <div class="day-number">第二天</div>
-            <div class="day-title">02/21 (初四) ‧ 藝文與購物的盛宴</div>
+            <div class="day-title">02/19 (初三) ‧ 藝文與購物的盛宴</div>
         </div>
         <ul class="timeline">
             <li>
@@ -235,7 +326,7 @@
 
         <div class="day-header">
             <div class="day-number">第三天</div>
-            <div class="day-title">02/22 (初五) ‧ 旗津海味送暖</div>
+            <div class="day-title">02/20 (初四) ‧ 旗津海味送暖</div>
         </div>
         <ul class="timeline">
             <li>
@@ -249,24 +340,25 @@
                 </div>
             </li>
             <li>
-                <div class="time">12:30</div>
+                <div class="time">12:00</div>
                 <div class="activity">
                     <strong>旗津海鮮團圓飯</strong>
                     <span>搭渡輪過海，在旗津老街點一桌現撈海味，慶祝春節。</span>
                 </div>
             </li>
             <li>
-                <div class="time">15:00</div>
+                <div class="time">13:30</div>
                 <div class="activity">
-                    <strong>高雄燈塔 ‧ 絕美夕照</strong>
-                    <span>登高望遠，看高雄港最後一抹晚霞。</span>
+                    <strong>旗津散步，欣賞大海與美景</strong>
+                    <span>步行上山參觀 高雄燈塔 與 旗後砲台</span><br>
+                    <span>租借電動自行車，沿著海岸線遊玩 星空隧道 → 彩虹教堂 → 海珍珠 → 風車公園。</span>
                 </div>
             </li>
             <li>
-                <div class="time">18:00</div>
+                <div class="time">17:00</div>
                 <div class="activity">
                     <strong>領行李 ‧ 賦歸台南</strong>
-                    <span>回飯店取回行李，搭車返回台南，迎接新的一年。</span>
+                    <span>回飯店取回行李，搭火車返回台南，迎接新的一年。</span>
                 </div>
             </li>
         </ul>
